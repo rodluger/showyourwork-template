@@ -1,7 +1,7 @@
 # Import the showyourwork module
 module showyourwork:
     snakefile:
-        ".showyourwork/Snakefile"
+        "showyourwork/Snakefile"
     config:
         config
 
