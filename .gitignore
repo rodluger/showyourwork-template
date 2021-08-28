@@ -1,0 +1,8 @@
+# Snakemake temporaries
+.snakemake
+
+# Showyourwork output files
+report.html
+arxiv.tar.gz
+ms.pdf
+dag.pdf
