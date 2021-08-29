@@ -6,4 +6,4 @@
 </p>
 <br>
 
-Your article is building! You can check out the status of the build by clicking on the **Actions** tab at the top. Refresh this page in a few minutes for information on how to get started.
+Your article is building! You can check out the status of the build by clicking on the **Actions** tab at the top. Refresh this page in a few minutes for information on how to get started. If run into trouble, check out the [documentation](https://showyourwork.readthedocs.io/) or feel free to raise an [issue](https://github.com/rodluger/showyourwork/issues)!
