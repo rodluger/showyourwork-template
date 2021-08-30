@@ -12,7 +12,7 @@ jobs:
         id: create
         with:
           script: |
-            octokit.rest.repos.createUsingTemplate({
+            github.repos.createUsingTemplate({
               template_owner: context.repo.owner,
               template_repo: context.repo.repo,
               owner: context.repo.owner,
