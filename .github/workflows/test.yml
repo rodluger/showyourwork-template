@@ -22,6 +22,7 @@ jobs:
           cp -R . $TARGET_DIRECTORY
           cd $TARGET_DIRECTORY
           rm -rf .git
+          git init
           git checkout --orphan main
           git add .
           git -c user.name='showyourwork-template-minimal' -c user.email='showyourwork-template-minimal' commit -m "test commit"
