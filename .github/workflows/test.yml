@@ -16,5 +16,5 @@ jobs:
               template_owner: context.repo.owner,
               template_repo: context.repo.repo,
               owner: context.repo.owner,
-              name: showyourwork-template-minimal-test
+              name: "showyourwork-template-minimal-test"
             });
