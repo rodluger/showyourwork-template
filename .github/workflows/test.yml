@@ -1,0 +1,20 @@
+name: test
+
+on: push
+
+jobs:
+  showyourwork:
+    runs-on: ubuntu-latest
+    name: Test template
+    steps:
+      - name: Create repo
+        uses: actions/github-script@v4
+        id: create
+        with:
+          script: |
+            octokit.rest.repos.createUsingTemplate({
+              template_owner: context.repo.owner,
+              template_repo: context.repo.repo,
+              owner: context.repo.owner,
+              name: showyourwork-template-minimal-test
+            });
