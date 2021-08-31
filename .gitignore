@@ -1,5 +1,6 @@
 # Snakemake temporaries
 .snakemake
+.showyourwork
 
 # Showyourwork output files
 report.html
