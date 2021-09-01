@@ -18,8 +18,27 @@
     \blindtext
 \end{abstract}
 
-% Main body with filler text
+% Main body
 \section{Introduction}
-\Blindtext[4]
+
+Figure~\ref{fig:broccoli} is an example of a static figure, committed directly to the repository.
+By placing the figure in the \texttt{static} directory, the user informs \texttt{showyourwork} that this figure doesn't have an associated script, and no rules need to be executed in order to produce it.
+
+% A static figure, committed directly to the repository
+% https://en.wikipedia.org/wiki/File:Romanesco_broccoli_(Brassica_oleracea).jpg
+% Creative Commons Attribution-Share Alike 4.0 International License
+% https://creativecommons.org/licenses/by-sa/4.0/deed.en
+\begin{figure}[ht!]
+    \begin{centering}
+        \includegraphics[width=0.4\linewidth]{static/broccoli.pdf}
+        \caption{
+            A sample figure that was directly committed to the repository.
+            Committing output isn't generally recommended, but for certain figure types (like photographs or flowcharts), it makes sense.
+        }
+        % The fact that the figure is in the static directory tells
+        % showyourwork not to look for a script that generates this figure
+        \label{fig:broccoli}
+    \end{centering}
+\end{figure}
 
 \end{document}
