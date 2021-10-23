@@ -11,4 +11,5 @@
 # ... but never these:
 .showyourwork*
 xstring.tex
+listofitems.tex
 *latexindent*
