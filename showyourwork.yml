@@ -1,2 +1,5 @@
-# User configuration; see the docs for details!
-verbose: true
+# Tell showyourwork that `src/figures/mandelbrot.py`
+# depends on `src/figures/utils/mandelbrot.py`.
+dependencies:
+  src/figures/mandelbrot.py:
+    - src/figures/utils/compute_mandelbrot.py

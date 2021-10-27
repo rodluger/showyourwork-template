@@ -18,8 +18,26 @@
     \blindtext
 \end{abstract}
 
-% Main body with filler text
+% Main body
 \section{Introduction}
-\Blindtext[4]
+
+Figure~\ref{fig:mandelbrot} is an example of a figure that depends on a helper script. 
+If we update the helper script, we want the figure to be re-generated the next time we build the article.
+In order to tell \texttt{showyourwork} about this extra dependency, we add an entry in the \texttt{showyourwork.yml} config file.
+
+% A sample figure generated from an external dataset
+\begin{figure}[ht!]
+    \begin{centering}
+        \includegraphics[width=0.75\linewidth]{figures/mandelbrot.pdf}
+        \caption{
+            A sample figure showing the Mandelbrot set.
+            This figure depends on the helper script \texttt{figures/utils/compute\_mandelbrot.py}.
+            The instructions for making that script an explicit dependency of this figure are specified in the \texttt{showyourwork.yml} config file.
+        }
+        % This label tells showyourwork that the script `figures/mandelbrot.py'
+        % generates the PDF included above
+        \label{fig:mandelbrot}
+    \end{centering}
+\end{figure}
 
 \end{document}
