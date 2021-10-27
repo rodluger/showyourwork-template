@@ -18,8 +18,25 @@
     \blindtext
 \end{abstract}
 
-% Main body with filler text
+% Main body
 \section{Introduction}
-\Blindtext[4]
+
+Figure~\ref{fig:fibonacci} is an example of a figure that depends on an external dataset.
+In order to tell \texttt{showyourwork} about this extra dependency (and how to download it), we add a line to \texttt{showyourwork.yml}.
+
+% A sample figure generated from an external dataset
+\begin{figure}[ht!]
+    \begin{centering}
+        \includegraphics[width=0.75\linewidth]{figures/fibonacci.pdf}
+        \caption{
+            A sample figure showing the Fibonacci sequence in binary.
+            This figure was generated from a dataset hosted externally on Zenodo. 
+            The instructions for downloading this dataset and making it an explicit dependency of this figure are specified in \texttt{showyourwork.yml}.
+        }
+        % This label tells showyourwork that the script `figures/fibonacci.py'
+        % generates the PDF included above
+        \label{fig:fibonacci}
+    \end{centering}
+\end{figure}
 
 \end{document}

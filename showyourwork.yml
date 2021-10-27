@@ -1,2 +1,10 @@
-# User configuration; see the docs for details!
-verbose: true
+# Tell showyourwork that `src/figures/fibonacci.py`
+# requires the file `src/data/fibonacci.dat` to run
+dependencies:
+  src/figures/fibonacci.py:
+    - src/data/fibonacci.dat
+
+# Tell showyourwork where to find ``src/data/fibonacci.dat``
+zenodo:
+  - src/data/fibonacci.dat:
+      id: 5187276
