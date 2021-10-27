@@ -1,2 +1,16 @@
-# User configuration; see the docs for details!
-verbose: true
+dependencies:
+  src/figures/my_figure.py:
+    - src/data/simulation.dat
+
+zenodo:
+  - src/data/simulation.dat:
+      script: src/figures/run_simulation.py
+      sandbox: false
+      token_name: ZENODO_TOKEN
+      title: Simulation results
+      description: >-
+        This is the result of a very expensive simulation.
+        Here is some text describing the simulation in detail,
+        how it was generated, and how to use the dataset.
+      creators:
+        - Luger, Rodrigo
