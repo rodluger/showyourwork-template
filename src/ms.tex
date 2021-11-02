@@ -1,36 +1,33 @@
 % Define document class
-\documentclass[fleqn,usenatbib]{mnras}
+\documentclass[hidelinks]{aa}
 
-\usepackage{newtxtext,newtxmath}
-\usepackage[T1]{fontenc}
+\usepackage[varg]{txfonts}
 
 % Filler text
 \usepackage{blindtext}
 
-% These dates will be filled out by the publisher
-\date{Accepted XXX. Received YYY; in original form ZZZ}
-
-% Enter the current year, for the copyright statements etc.
-\pubyear{2021}
+\begin{document}
 
 % Title
 \title{An open source scientific article}
 
 % Author list
-\author{First Author}
+\author{First Author\inst{1}}
 
-% Don't change these lines
-\begin{document}
-\pagerange{\pageref{firstpage}--\pageref{lastpage}}
-\maketitle
+% Affil
+\institute{Institute Name}
+
+% Metadata
+\date{Received XXX / Accepted YYY}
 
 % Abstract with filler text
-\begin{abstract}
+\abstract{
     \blindtext
-\end{abstract}
+}
+
+\maketitle
 
 % Main body
-\label{firstpage}
 \section{Introduction}
 
 Figure~\ref{fig:mandelbrot} was automatically generated using \texttt{showyourwork} with minimal instructions from the user.
@@ -51,7 +48,4 @@ This behavior can be changed or overridden by specifying custom rules in the \te
     \end{centering}
 \end{figure}
 
-% Don't change these lines
-\bsp
-\label{lastpage}
 \end{document}
