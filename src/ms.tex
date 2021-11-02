@@ -1,11 +1,17 @@
 % Define document class
-\documentclass[twocolumn]{aastex631}
+\documentclass[fleqn,usenatbib]{mnras}
+
+\usepackage{newtxtext,newtxmath}
+\usepackage[T1]{fontenc}
 
 % Filler text
 \usepackage{blindtext}
 
-% Begin!
-\begin{document}
+% These dates will be filled out by the publisher
+\date{Accepted XXX. Received YYY; in original form ZZZ}
+
+% Enter the current year, for the copyright statements etc.
+\pubyear{2021}
 
 % Title
 \title{An open source scientific article}
@@ -13,12 +19,18 @@
 % Author list
 \author{First Author}
 
+% Don't change these lines
+\begin{document}
+\pagerange{\pageref{firstpage}--\pageref{lastpage}}
+\maketitle
+
 % Abstract with filler text
 \begin{abstract}
     \blindtext
 \end{abstract}
 
 % Main body
+\label{firstpage}
 \section{Introduction}
 
 Figure~\ref{fig:mandelbrot} was automatically generated using \texttt{showyourwork} with minimal instructions from the user.
@@ -26,7 +38,7 @@ By labeling the figure with \verb+\label{fig:mandelbrot}+, the user informs \tex
 This behavior can be changed or overridden by specifying custom rules in the \texttt{Snakefile}.
 
 % A sample figure
-\begin{figure}[ht!]
+\begin{figure}
     \begin{centering}
         \includegraphics[width=0.4\linewidth]{figures/mandelbrot.pdf}
         \caption{
@@ -39,4 +51,7 @@ This behavior can be changed or overridden by specifying custom rules in the \te
     \end{centering}
 \end{figure}
 
+% Don't change these lines
+\bsp
+\label{lastpage}
 \end{document}
