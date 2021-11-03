@@ -16,6 +16,11 @@ jobs:
           fetch-depth: 0
           submodules: recursive
 
+      - name: Install LaTeX
+        id: latex
+        shell: bash -l {0}
+        run: wget -qO- "https://yihui.org/tinytex/install-bin-unix.sh" | sh
+
       - name: Build the article PDF
         id: build
         uses: ./showyourwork/showyourwork-action
