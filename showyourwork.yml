@@ -1,12 +1,13 @@
 zenodo:
   - src/data/results.tar.gz:
-      sandbox: true
-      token_name: ZENODO_SANDBOX_TOKEN
-      title: Simulation results 11/09/21
+      sandbox: false
+      token_name: ZENODO_TOKEN
+      title: Random numbers
       description: >-
-        This is the result of a very expensive simulation.
-        Here is some text describing the simulation in detail,
-        how it was generated, and how to use the dataset.
+        This is a collection of ten datasets, each containing
+        ten iid zero-mean, unit-variance random numbers. These
+        are used in an example of the showyourwork open source
+        scientific article workflow.
       creators:
         - Luger, Rodrigo
       contents: &results
