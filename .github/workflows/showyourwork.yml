@@ -18,7 +18,7 @@ jobs:
 
       - name: Install Graphviz
         shell: bash -l {0}
-        run: sudo apt install graphviz
+        run: sudo apt install -y graphviz
 
       - name: Build the article PDF
         id: build
