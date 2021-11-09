@@ -6,11 +6,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-# Load the simulation results
-X = np.loadtxt("../data/simulation.dat")
+# Load the "simulation" results
+X = [np.loadtxt(f"../data/results_{value}.dat") for value in range(0, 10)]
 
-# Plot the figure
+# Plot them
 fig, ax = plt.subplots(1)
-ax.imshow(X, cmap="viridis")
-ax.axis("off")
+plt.plot(X)
 fig.savefig("my_figure.pdf", bbox_inches="tight")

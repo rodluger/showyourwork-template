@@ -1,16 +1,26 @@
-dependencies:
-  src/figures/my_figure.py:
-    - src/data/simulation.dat
-
 zenodo:
-  - src/data/simulation.dat:
-      script: src/figures/run_simulation.py
-      sandbox: false
-      token_name: ZENODO_TOKEN
-      title: Simulation results
+  - src/data/results.tar.gz:
+      sandbox: true
+      token_name: ZENODO_SANDBOX_TOKEN
+      title: Simulation results 11/09/21
       description: >-
         This is the result of a very expensive simulation.
         Here is some text describing the simulation in detail,
         how it was generated, and how to use the dataset.
       creators:
         - Luger, Rodrigo
+      contents: &results
+        - src/data/results_0.dat
+        - src/data/results_1.dat
+        - src/data/results_2.dat
+        - src/data/results_3.dat
+        - src/data/results_4.dat
+        - src/data/results_5.dat
+        - src/data/results_6.dat
+        - src/data/results_7.dat
+        - src/data/results_8.dat
+        - src/data/results_9.dat
+
+dependencies:
+  src/figures/my_figure.py:
+    *results
