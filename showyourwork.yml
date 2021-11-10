@@ -1,2 +1,3 @@
-# User configuration; see the docs for details!
-verbose: true
+dependencies:
+  src/ms.tex:
+    - src/answer.tex

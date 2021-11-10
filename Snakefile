@@ -12,3 +12,14 @@ module showyourwork:
 
 # Use all default rules
 use rule * from showyourwork
+
+
+rule answer:
+    input:
+        "src/answer.py"
+    output:
+        "src/answer.tex"
+    conda:
+        "environment.yml"
+    shell:
+        "cd src && python answer.py"
