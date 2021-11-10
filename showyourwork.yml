@@ -1,5 +1,6 @@
 zenodo:
   - src/data/results.tar.gz:
+      script: src/data/run_simulation.py
       sandbox: false
       token_name: ZENODO_TOKEN
       title: Random numbers
