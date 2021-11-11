@@ -1,0 +1,5 @@
+dependencies:
+  src/figures/my_figure.py:
+    {% for i in range(10) -%}
+    - src/data/results_{{i}}.dat
+    {% endfor %}
