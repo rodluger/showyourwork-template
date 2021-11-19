@@ -30,3 +30,5 @@ rule analysis:
         "src/data/results_{value}.dat"
     shell:
         "python {input[0]} {wildcards.value}"
+    conda:
+        "environment.yml"
