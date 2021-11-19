@@ -28,7 +28,7 @@ rule analysis:
         "src/data/run_simulation.py"
     output:
         "src/data/results_{value}.dat"
-    shell:
-        "python {input[0]} {wildcards.value}"
     conda:
         "environment.yml"
+    shell:
+        "python {input[0]} {wildcards.value}"
