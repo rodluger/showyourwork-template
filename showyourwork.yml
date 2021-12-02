@@ -1,7 +1,6 @@
 zenodo:
   - src/data/results.tar.gz:
-      sandbox: false
-      token_name: ZENODO_TOKEN
+      id: 5662426
       title: Random numbers
       description: >-
         This is a collection of ten datasets, each containing
