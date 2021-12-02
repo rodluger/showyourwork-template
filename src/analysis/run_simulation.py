@@ -12,4 +12,4 @@ for value in range(10):
     X = np.random.randn(10)
 
     # Save the "simulation" results to disk
-    np.savetxt(f"results_{value}.dat", X=X)
+    np.savetxt(f"../data/results_{value}.dat", X=X)

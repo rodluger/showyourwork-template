@@ -1,7 +1,7 @@
 zenodo:
   - src/data/results.tar.gz:
       id: 5662426 # concept
-      script: src/data/run_simulation.py
+      script: src/analysis/run_simulation.py
       title: Random numbers
       description: >-
         This is a collection of ten datasets, each containing
