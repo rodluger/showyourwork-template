@@ -1,8 +1,7 @@
 zenodo:
   - src/data/results.tar.gz:
+      id: 5662426 # concept
       script: src/data/run_simulation.py
-      sandbox: false
-      token_name: ZENODO_TOKEN
       title: Random numbers
       description: >-
         This is a collection of ten datasets, each containing
