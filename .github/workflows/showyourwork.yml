@@ -21,5 +21,3 @@ jobs:
         uses: ./showyourwork/showyourwork-action
         with:
           install-tex: true
-        env:
-          ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
