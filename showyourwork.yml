@@ -1,6 +1,6 @@
 zenodo:
   - src/data/results.tar.gz:
-      id: 5662426
+      id: 5663401 # version
       title: Random numbers
       description: >-
         This is a collection of ten datasets, each containing
