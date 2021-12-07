@@ -1,7 +1,7 @@
 # Tell showyourwork about new script extensions and how to run them
 scripts:
   # Tell showyourwork how to execute `.gv` files to produce figures.
-  # The {script} and {figure} placeholders resolve to the script file
+  # The {script} and {output} placeholders resolve to the script file
   # name and figure file name, respectively, at run time.
   gv:
-    dot -Tpdf {script} > {figure}
+    dot -Tpdf {script} > {output}
