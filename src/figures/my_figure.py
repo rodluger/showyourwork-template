@@ -1,5 +1,5 @@
 """
-Generate a figure from the simulation results.
+Generate a figure from the random numbers.
 
 """
 import numpy as np
@@ -7,10 +7,9 @@ import matplotlib.pyplot as plt
 
 
 # Load the simulation results
-X = np.loadtxt("../data/simulation.dat")
+X = np.loadtxt("../data/random.dat", delimiter=",")
 
 # Plot the figure
 fig, ax = plt.subplots(1)
-ax.imshow(X, cmap="viridis")
-ax.axis("off")
+ax.plot(X)
 fig.savefig("my_figure.pdf", bbox_inches="tight")

@@ -1,15 +1,17 @@
 dependencies:
   src/figures/my_figure.py:
-    - src/data/simulation.dat
+    - src/data/random.dat
 
 zenodo:
-  - src/data/simulation.dat:
-      id: 5573042 # concept
-      script: src/figures/run_simulation.py
-      title: Simulation results
+  - src/data/random.dat:
+      id: 5762475 # concept
+      script: src/analysis/random.sh
+      title: More random numbers
       description: >-
-        This is the result of a very expensive simulation.
-        Here is some text describing the simulation in detail,
-        how it was generated, and how to use the dataset.
+        Random numbers used to showcase showyourwork!
       creators:
         - Luger, Rodrigo
+
+script:
+  sh:
+    bash {script}
