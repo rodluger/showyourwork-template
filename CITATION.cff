@@ -1,25 +1,25 @@
 cff-version: 1.2.0
 message: "If you make use of the results in this paper, please cite it as below."
 authors:
-  - family-names: null
-    given-names: null
-    orcid: null
-title: null
-version: null
-doi: null
-date-released: null
-url: null
+  - family-names:
+    given-names:
+    orcid:
+title:
+version:
+doi:
+date-released:
+url:
 preferred-citation:
   type: article
   authors:
-    - family-names: null
-      given-names: null
-      orcid: null
-  doi: null
-  journal: null
-  month: null
-  start: null
-  title: null
-  issue: null
-  volume: null
-  year: null
+    - family-names:
+      given-names:
+      orcid:
+  doi:
+  journal:
+  month:
+  start:
+  title:
+  issue:
+  volume:
+  year:
