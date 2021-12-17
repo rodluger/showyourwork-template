@@ -1,25 +1,25 @@
 cff-version: 1.2.0
 message: "If you make use of the results in this paper, please cite it as below."
 authors:
-  - family-names:
-    given-names:
-    orcid:
-title:
-version:
-doi:
-date-released:
-url:
+  - family-names: "Last"
+    given-names: "First"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "Repository title"
+version: 0.0.0
+doi: "N/A"
+date-released: "N/A"
+url: "N/A"
 preferred-citation:
   type: article
   authors:
-    - family-names:
-      given-names:
-      orcid:
-  doi:
-  journal:
-  month:
-  start:
-  title:
-  issue:
-  volume:
-  year:
+    - family-names: "Last"
+      given-names: "First"
+      orcid: "https://orcid.org/0000-0000-0000-0000"
+  doi: "N/A"
+  journal: "Journal Name"
+  month: "Jan"
+  start: 0
+  title: "Article title"
+  issue: 0
+  volume: 0
+  year: 0
